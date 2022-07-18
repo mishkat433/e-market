@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Lobster&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;1,800;1,900&family=Poppins:wght@500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    color: #3A3A3A;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 1240px;
+    /* display: flex;
+    flex-direction: column; */
+    margin: 0 auto;
+}
+
+/* nav */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.logo {
+    font-size: 24px;
+    color: #3A3A3A;
+    width: 50%;
+}
+
+.menu-item {
+    width: 50%;
+}
+
+.menu-item ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: end;
+}
+
+.menu-item ul li a {
+    text-decoration: none;
+    margin-right: 30px;
+    color: #3A3A3A;
+}
+
+/* header section */
+
+.header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    grid-column-gap: 100px;
+    margin-bottom: 100px;
+    justify-items: center;
+}
+
+.title h1 {
+    font-weight: 700;
+    font-size: 52px;
+    margin-bottom: 16px;
+}
+
+.head-btn {
+    background: #E02C6D;
+    border: none;
+    width: 196px;
+    height: 44px;
+    color: #fff;
+    padding: 10px 24px;
+    border-radius: 40px;
+    margin-top: 16px;
+}
+
+.thumbnail img {
+    width: 475px;
+    height: 475px;
+    border: 1px solid gray;
+    border-radius: 50%;
+}
+
+/* branding */
+
+.branding {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    align-items: center;
+    margin-bottom: 100px;
+    justify-items: center;
+    height: 110px;
+    box-shadow: 0px 0px 25px -8px lightgrey;
+
+}
+
+/* related product */
+
+.collection-title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-items: center;
+}
+
+.card {
+    width: 329px;
+    height: 430px;
+    box-shadow: 0px 0px 30px -12px lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-img {
+    width: 300px;
+    height: 256px;
+}
+
+.info {
+    padding-left: 14px;
+}
+
+.card-title {
+    font-size: 28px;
+}
+
+.price {
+    font-size: 24px;
+}
+
+.f {
+    color: #FB8200;
+}
+
+.card-para {
+    font-size: 14px;
+    color: #787885;
+}
