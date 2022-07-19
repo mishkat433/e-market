@@ -27,6 +27,10 @@
     margin-bottom: 50px;
 }
 
+.hide {
+    display: none;
+}
+
 .logo {
     font-size: 24px;
     color: #3A3A3A;
@@ -204,11 +208,13 @@
 
 .footer {
     background-color: rgb(4, 4, 33);
-    height: 250px;
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 40px 0px;
 }
 
 .c {
@@ -239,8 +245,27 @@
     }
 
     .nav {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 0px;
+    }
+
+    .hide {
+        display: block;
+    }
+
+
+    .logo {
+        font-size: 18px;
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .menu-item {
         display: none;
     }
+
 
     .header {
         display: flex;
@@ -250,11 +275,13 @@
     }
 
     .thumbnail {
-        width: 100%;
+        width: 257px;
+        height: 257px;
     }
 
     .thumbnail img {
-        width: 100%;
+        width: 202px;
+        height: 190px;
     }
 
     .branding {
@@ -334,15 +361,19 @@
         text-align: center;
     }
 
+
 }
 
-/* @media screen and (min-width: 689px) and (max-width:992px) {
-    body {
-        padding: 10px;
+@media screen and (min-width: 689px) and (max-width:992px) {
+
+
+
+    .hide {
+        display: none;
     }
 
-    .container {
-        width: 100%;
+    .menu-item {
+        width: 70%;
     }
 
     .gap-b {
@@ -350,7 +381,7 @@
     }
 
     .nav {
-        display: none;
+        display: flex;
     }
 
     .header {
@@ -361,19 +392,19 @@
     }
 
     .thumbnail {
-        width: 100%;
+        width: 90%;
         background: url("../images/Circle\ design.svg");
         background-repeat: no-repeat;
         background-position: center;
-        background-size: 50%;
+        background-size: 70%;
     }
 
     .thumbnail img {
-        width: 100%;
+        width: 70%;
     }
 
     .branding {
-        display: none;
+        display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
         height: 100%;
@@ -385,7 +416,7 @@
     }
 
     .cards {
-        display: none;
+        display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
         justify-items: center;
@@ -395,7 +426,7 @@
         width: 96%;
         height: 100%;
         box-shadow: 0px 0px 30px -12px lightgray;
-        display: none;
+        display: flex;
         flex-direction: column;
         align-items: flex-start;
         margin-bottom: 50px;
@@ -418,7 +449,7 @@
     .card-para {
         font-size: 16px;
         margin-top: 5px;
-        width: 70%;
+        width: 80%;
     }
 
     .f {
@@ -427,11 +458,11 @@
 
     .more {
         text-align: center;
-        margin-top: 32px;
+        margin-top: 40px;
     }
 
     .equipment {
-        display: none;
+        display: flex;
         flex-direction: column-reverse;
         align-items: center;
         margin-bottom: 50px;
@@ -449,8 +480,5 @@
         text-align: center;
     }
 
-    .footer {
-        display: none;
-    }
 
-} */
+}
