@@ -14,6 +14,10 @@
     margin: 0 auto;
 }
 
+.gap-b {
+    margin-bottom: 100px;
+}
+
 /* nav */
 .nav {
     display: flex;
@@ -52,7 +56,6 @@
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     grid-column-gap: 100px;
-    margin-bottom: 100px;
     justify-items: center;
 }
 
@@ -73,11 +76,20 @@
     margin-top: 16px;
 }
 
-.thumbnail img {
+.thumbnail {
     width: 475px;
     height: 475px;
-    border: 1px solid gray;
-    border-radius: 50%;
+    background: url("../images/Circle\ design.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90%;
+}
+
+
+.thumbnail img {
+    width: 440px;
+    height: 414px;
+    margin-top: 20px;
 }
 
 /* branding */
@@ -86,7 +98,6 @@
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     align-items: center;
-    margin-bottom: 100px;
     justify-items: center;
     height: 110px;
     box-shadow: 0px 0px 25px -8px lightgrey;
@@ -109,13 +120,15 @@
 }
 
 .card {
-    width: 329px;
+    width: 330px;
     height: 430px;
     box-shadow: 0px 0px 30px -12px lightgray;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 50px;
+    border-radius: 5px;
 }
 
 .card-img {
@@ -124,7 +137,7 @@
 }
 
 .info {
-    padding-left: 14px;
+    padding: 0px 14px;
 }
 
 .card-title {
@@ -141,5 +154,303 @@
 
 .card-para {
     font-size: 14px;
-    color: #787885;
 }
+
+.more {
+    text-align: end;
+    margin-right: 50px;
+}
+
+.see-more,
+.fa-right-long {
+    text-decoration: none;
+    color: #E02C6DDE;
+}
+
+/* equipment */
+
+.equipment {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.th {
+    width: 50%;
+}
+
+.equipment-img {
+    width: 404px;
+    height: 270px;
+}
+
+.article h1 {
+    font-size: 38px;
+    margin-bottom: 16px;
+}
+
+.btn {
+    width: 155px;
+    height: 44px;
+    padding: 10px 24px;
+    background-color: #E02C6D;
+    color: white;
+    border: transparent;
+    margin-top: 16px;
+    border-radius: 40px;
+}
+
+/* footer */
+
+.footer {
+    background-color: rgb(4, 4, 33);
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.c {
+    color: #fff;
+}
+
+.icon i {
+    margin: 16px;
+    color: #fff;
+    background-color: #3A3A3A;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+/* responsive */
+
+@media screen and (max-width:687px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .gap-b {
+        margin-bottom: 50px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        grid-column-gap: 0px;
+    }
+
+    .thumbnail {
+        width: 100%;
+    }
+
+    .thumbnail img {
+        width: 100%;
+    }
+
+    .branding {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        height: 100%;
+        padding: 40px 0px;
+    }
+
+    .branding img {
+        margin: 20px;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        justify-items: center;
+    }
+
+    .card {
+        width: 96%;
+        height: 100%;
+        box-shadow: 0px 0px 30px -12px lightgray;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 50px;
+        padding: 10px;
+    }
+
+    .card-img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .info {
+        padding: 0px;
+    }
+
+    .card-title {
+        margin-top: 5px;
+    }
+
+    .card-para {
+        font-size: 16px;
+        margin-top: 5px;
+        width: 70%;
+    }
+
+    .f {
+        margin-top: 5px;
+    }
+
+    .more {
+        text-align: center;
+        margin-top: 32px;
+    }
+
+    .equipment {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .equipment-img {
+        width: 100%;
+    }
+
+    .th {
+        width: 100%;
+    }
+
+    .article {
+        text-align: center;
+    }
+
+}
+
+/* @media screen and (min-width: 689px) and (max-width:992px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .gap-b {
+        margin-bottom: 50px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        grid-column-gap: 0px;
+    }
+
+    .thumbnail {
+        width: 100%;
+        background: url("../images/Circle\ design.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 50%;
+    }
+
+    .thumbnail img {
+        width: 100%;
+    }
+
+    .branding {
+        display: none;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        height: 100%;
+        padding: 40px 0px;
+    }
+
+    .branding img {
+        margin: 20px;
+    }
+
+    .cards {
+        display: none;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        justify-items: center;
+    }
+
+    .card {
+        width: 96%;
+        height: 100%;
+        box-shadow: 0px 0px 30px -12px lightgray;
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 50px;
+        padding: 10px;
+    }
+
+    .card-img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .info {
+        padding: 0px;
+    }
+
+    .card-title {
+        margin-top: 5px;
+    }
+
+    .card-para {
+        font-size: 16px;
+        margin-top: 5px;
+        width: 70%;
+    }
+
+    .f {
+        margin-top: 5px;
+    }
+
+    .more {
+        text-align: center;
+        margin-top: 32px;
+    }
+
+    .equipment {
+        display: none;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .equipment-img {
+        width: 100%;
+    }
+
+    .th {
+        width: 100%;
+    }
+
+    .article {
+        text-align: center;
+    }
+
+    .footer {
+        display: none;
+    }
+
+} */
